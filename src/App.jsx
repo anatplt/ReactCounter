@@ -1,33 +1,18 @@
 import { useState } from "react";
 import "./App.css";
+import Increment from "./components/Increment";
+import Decrement from "./components/Decrement";
+import Reset from "./components/Reset";
 
 const App = () => {
   const [counter, setCounter] = useState(0);
 
   return (
     <div>
-      <button
-        onClick={() => {
-          setCounter(counter - 1);
-        }}
-      >
-        -
-      </button>
+      <Increment counter={counter} setCounter={setCounter} />
       <p>{counter}</p>
-      <button
-        onClick={() => {
-          setCounter(counter + 1);
-        }}
-      >
-        +
-      </button>
-      <button
-        onClick={() => {
-          setCounter(0);
-        }}
-      >
-        RESET
-      </button>
+      <Decrement counter={counter} setCounter={setCounter} />
+      <Reset setCounter={setCounter} />
     </div>
   );
 };
