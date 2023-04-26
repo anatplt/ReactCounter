@@ -1,6 +1,7 @@
 const Decrement = (props) => {
   return (
     <button
+      className="decrement"
       onClick={() => {
         props.setCounter(props.counter - 1);
       }}

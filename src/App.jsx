@@ -20,9 +20,13 @@ const App = () => {
           <p>{counter}</p>
           <Increment counter={counter} setCounter={setCounter} />
         </div>
-
-        {/* <Reset setCounter={setCounter} /> */}
+        <div>
+          <Reset setCounter={setCounter} />
+        </div>
       </main>
+      <footer>
+        <p>Made with React at Le Reacteur by Anat</p>
+      </footer>
     </section>
   );
 };
