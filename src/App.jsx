@@ -8,12 +8,16 @@ const App = () => {
   const [counter, setCounter] = useState(0);
 
   return (
-    <div>
-      <Increment counter={counter} setCounter={setCounter} />
-      <p>{counter}</p>
-      <Decrement counter={counter} setCounter={setCounter} />
-      <Reset setCounter={setCounter} />
-    </div>
+    <main>
+      <img src="./" alt="" />
+      <h1>React Counter</h1>
+      <div>
+        <Increment counter={counter} setCounter={setCounter} />
+        <p>{counter}</p>
+        <Decrement counter={counter} setCounter={setCounter} />
+        <Reset setCounter={setCounter} />
+      </div>
+    </main>
   );
 };
 
