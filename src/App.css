@@ -6,6 +6,9 @@ body {
 h1 {
   font-size: 48px;
 }
+button {
+  all: unset;
+}
 
 /* =========SECTION======== */
 header {
@@ -42,15 +45,11 @@ main > div:first-child p {
 }
 .decrement,
 .increment {
-  background: none;
-  border: none;
   color: #1e1e1e;
   font-size: 80px;
 }
 main > div:last-child button {
   background-color: #5c48d3;
-  border: none;
-  font-family: inherit;
   font-size: 32px;
   color: white;
   border-radius: 10px;
@@ -61,6 +60,7 @@ main > div:last-child {
   height: 10vh;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 footer {
   display: flex;
