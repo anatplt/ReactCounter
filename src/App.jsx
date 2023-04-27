@@ -16,7 +16,9 @@ const App = () => {
       </header>
       <main>
         <div>
-          <Decrement counter={counter} setCounter={setCounter} />
+          {counter > 0 && (
+            <Decrement counter={counter} setCounter={setCounter} />
+          )}
           <p>{counter}</p>
           <Increment counter={counter} setCounter={setCounter} />
         </div>
