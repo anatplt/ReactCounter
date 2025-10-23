@@ -6,7 +6,7 @@ import Reset from "./components/Reset";
 import logo from "./assets/img/calculator-solid.png";
 
 const App = () => {
-  const [counter, setCounter] = useState(1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000);
+  const [counter, setCounter] = useState(0);
 
   return (
     <section>
